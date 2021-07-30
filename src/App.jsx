@@ -6,7 +6,7 @@ const App = () => {
   const [search,setsearch]=useState("Mumbai");
   useEffect(()=>{
     const fetchApi= async()=>{
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=59a20eff3dbd51ec4f8b42e66d5fe05c`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=59a20eff3dbd51ec4f8b42e66d5fe05c`;
       const res = await fetch(url);
       const Jres = await res.json();
 
